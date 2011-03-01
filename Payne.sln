@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artist.DAO", "Artist.DAO\Artist.DAO.csproj", "{7C44A671-382A-4525-B80A-258D0BA3B22B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Artist.UI", "Artist.UI\Artist.UI.csproj", "{EAD825CC-8F21-4250-AEAB-ED7DF37C02C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{138A420D-C004-41BF-93AF-2ABB15362A81}"
+	ProjectSection(SolutionItems) = preProject
+		Dependencies\FizzWare.NBuilder.dll = Dependencies\FizzWare.NBuilder.dll
+		Dependencies\StructureMap.dll = Dependencies\StructureMap.dll
+		Dependencies\StructureMap.xml = Dependencies\StructureMap.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C44A671-382A-4525-B80A-258D0BA3B22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C44A671-382A-4525-B80A-258D0BA3B22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C44A671-382A-4525-B80A-258D0BA3B22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C44A671-382A-4525-B80A-258D0BA3B22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAD825CC-8F21-4250-AEAB-ED7DF37C02C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAD825CC-8F21-4250-AEAB-ED7DF37C02C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAD825CC-8F21-4250-AEAB-ED7DF37C02C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAD825CC-8F21-4250-AEAB-ED7DF37C02C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

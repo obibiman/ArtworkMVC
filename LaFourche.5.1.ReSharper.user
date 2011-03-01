@@ -1,0 +1,503 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:OrderDetailController.cs" caret="5417" fromTop="56" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Details.aspx" caret="1123" fromTop="25" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Delete.aspx" caret="1261" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Index.aspx" caret="2158" fromTop="21" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Implementations/f:ProductRepository.cs" caret="3205" fromTop="60" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:ProductController.cs" caret="3962" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Shared/d:EditorTemplates/f:DateTime.ascx" caret="145" fromTop="1" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Delete.aspx" caret="0" fromTop="0" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Edit.aspx" caret="2592" fromTop="15" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Create.aspx" caret="1397" fromTop="3" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ProductPricing/f:Edit.aspx" caret="2095" fromTop="25" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ProductPricing/f:Index.aspx" caret="0" fromTop="0" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ProductPricing/f:Details.aspx" caret="0" fromTop="0" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Product/f:Create.aspx" caret="2796" fromTop="31" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Create.aspx" caret="2466" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Edit.aspx" caret="2548" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Order/f:Edit.aspx" caret="1751" fromTop="13" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Order/f:Create.aspx" caret="1709" fromTop="22" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ElectronicMail/f:Edit.aspx" caret="2054" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ElectronicMail/f:Create.aspx" caret="2050" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Customer/f:Edit.aspx" caret="2076" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Customer/f:Create.aspx" caret="2049" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Address/f:Create.aspx" caret="3014" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Address/f:Edit.aspx" caret="2357" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Telephone/f:Create.aspx" caret="2025" fromTop="19" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Telephone/f:Edit.aspx" caret="2067" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ProductPricing/f:Create.aspx" caret="2054" fromTop="22" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Content/f:Site.css" caret="5476" fromTop="37" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Shared/f:Site.Master" caret="3909" fromTop="91" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/f:Global.asax.cs" caret="990" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:ProductController.cs" caret="5754" fromTop="26" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:ProductController.cs" caret="3440" fromTop="25" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:ProductController.cs" caret="2350" fromTop="16" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:ProductController.cs" caret="5741" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:ProductController.cs" caret="4445" fromTop="17" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Shared/f:Site.Master" caret="987" fromTop="14" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Shared/f:Site.Master" caret="1175" fromTop="20" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Shared/d:EditorTemplates/f:DateTime.ascx" caret="145" fromTop="1" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Edit.aspx" caret="1398" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Edit.aspx" caret="1796" fromTop="29" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Edit.aspx" caret="2593" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Shared/f:Site.Master" caret="754" fromTop="11" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Create.aspx" caret="2453" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Create.aspx" caret="1748" fromTop="11" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Promotion/f:Create.aspx" caret="1397" fromTop="3" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ProductPricing/f:Create.aspx" caret="2054" fromTop="22" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ProductPricing/f:Edit.aspx" caret="2095" fromTop="25" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Product/f:Create.aspx" caret="2796" fromTop="19" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Create.aspx" caret="2466" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:OrderDetail/f:Edit.aspx" caret="2548" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Order/f:Edit.aspx" caret="1751" fromTop="13" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Order/f:Create.aspx" caret="1709" fromTop="22" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ElectronicMail/f:Edit.aspx" caret="2054" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:ElectronicMail/f:Create.aspx" caret="2050" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Customer/f:Edit.aspx" caret="2076" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Customer/f:Create.aspx" caret="2049" fromTop="27" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Address/f:Create.aspx" caret="3014" fromTop="24" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Address/f:Edit.aspx" caret="2357" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Telephone/f:Create.aspx" caret="2025" fromTop="19" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Telephone/f:Edit.aspx" caret="2067" fromTop="27" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="3" />
+      <Item value="Artist.Domain" priority="0" />
+      <Item value="EntityFrameWork" priority="0" />
+      <Item value="System" priority="1" />
+      <Item value="Collections" priority="0" />
+      <Item value="Generic" priority="0" />
+      <Item value="public" priority="8" />
+      <Item value="CustomerRepository`0" priority="2" />
+      <Item value="_dataContext" priority="4" />
+      <Item value="new" priority="23" />
+      <Item value="KarenEntities" priority="0" />
+      <Item value="var" priority="33" />
+      <Item value="from" priority="3" />
+      <Item value="select" priority="2" />
+      <Item value="customer" priority="1" />
+      <Item value="Linq" priority="0" />
+      <Item value="return" priority="5" />
+      <Item value="customers" priority="0" />
+      <Item value="where" priority="2" />
+      <Item value="cust" priority="11" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="int" priority="19" />
+      <Item value="CustomerController`0" priority="0" />
+      <Item value="Artist" priority="0" />
+      <Item value="Domain" priority="0" />
+      <Item value="Repository" priority="0" />
+      <Item value="_repository" priority="3" />
+      <Item value="CustomerRepository" priority="1" />
+      <Item value="CustomerViewModel" priority="0" />
+      <Item value="IList" priority="0" />
+      <Item value="foreach" priority="7" />
+      <Item value="lstCustomer" priority="7" />
+      <Item value="CustomerViewModel`0" priority="0" />
+      <Item value="Id" priority="4" />
+      <Item value="FirstName" priority="4" />
+      <Item value="MiddleInitial" priority="2" />
+      <Item value="LastName" priority="1" />
+      <Item value="ModifiedDate" priority="0" />
+      <Item value="lstCvm" priority="4" />
+      <Item value="cvm" priority="0" />
+      <Item value="id" priority="0" />
+      <Item value="custToDisplay" priority="6" />
+      <Item value="Model" priority="20" />
+      <Item value="Address`0" priority="3" />
+      <Item value="Addr" priority="1" />
+      <Item value="address" priority="8" />
+      <Item value="City" priority="1" />
+      <Item value="State" priority="1" />
+      <Item value="Zip" priority="1" />
+      <Item value="CustomerId" priority="2" />
+      <Item value="customerId" priority="5" />
+      <Item value="IsPrimary" priority="2" />
+      <Item value="entityToEdit" priority="1" />
+      <Item value="AddressRepository`0" priority="1" />
+      <Item value="AddressViewModel`0" priority="2" />
+      <Item value="PhoneNumber" priority="6" />
+      <Item value="IEnumerable" priority="4" />
+      <Item value="telephone" priority="10" />
+      <Item value="Dictionary" priority="1" />
+      <Item value="IDictionary" priority="0" />
+      <Item value="Dictionary&lt;int,string&gt;" priority="0" />
+      <Item value="dictCustomer" priority="3" />
+      <Item value="if" priority="3" />
+      <Item value="String`0" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="customerName" priority="2" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="sb" priority="2" />
+      <Item value="else" priority="0" />
+      <Item value="electronicMail" priority="0" />
+      <Item value="TelephoneEditViewModel`0" priority="0" />
+      <Item value="CustomerIdentifier" priority="5" />
+      <Item value="customerInfo" priority="1" />
+      <Item value="SelectListItem`0" priority="2" />
+      <Item value="SelectListItem" priority="0" />
+      <Item value="item" priority="7" />
+      <Item value="keyValuePair" priority="4" />
+      <Item value="List" priority="4" />
+      <Item value="List&lt;SelectListItem&gt;" priority="0" />
+      <Item value="lstDropdown" priority="3" />
+      <Item value="model" priority="2" />
+      <Item value="Selected" priority="1" />
+      <Item value="false" priority="1" />
+      <Item value="try" priority="0" />
+      <Item value="exep" priority="0" />
+      <Item value="UI" priority="0" />
+      <Item value="PaginatedList" priority="2" />
+      <Item value="PageIndex" priority="2" />
+      <Item value="paginatedListing" priority="5" />
+      <Item value="PageSize" priority="0" />
+      <Item value="TotalCount" priority="0" />
+      <Item value="TotalPages" priority="0" />
+      <Item value="CustomerPagingViewModel`0" priority="0" />
+      <Item value="IQueryable`0" priority="1" />
+      <Item value="pageIndex" priority="0" />
+      <Item value="pageSize" priority="4" />
+      <Item value="ViewData" priority="4" />
+      <Item value="NavId" priority="2" />
+      <Item value="telephoneToDisplay" priority="0" />
+      <Item value="ValidationSummary`0" priority="0" />
+      <Item value="null" priority="1" />
+      <Item value="Items" priority="0" />
+      <Item value="List&lt;CustomerIdentifier&gt;" priority="1" />
+      <Item value="custIdentifier" priority="2" />
+      <Item value="lstCustIdentifier" priority="0" />
+      <Item value="CustomerIdentifier`0" priority="2" />
+      <Item value="custometIdentifier" priority="3" />
+      <Item value="ValidateRequest" priority="0" />
+      <Item value="HttpCacheRevalidation`0" priority="0" />
+      <Item value="private" priority="3" />
+      <Item value="void" priority="0" />
+      <Item value="ParallelEnumerable`0" priority="0" />
+      <Item value="PhonePartialViewModel`0" priority="0" />
+      <Item value="partialToDisplay" priority="0" />
+      <Item value="PopulateTelephonePartial`0" priority="0" />
+      <Item value="lstCustomerInfo" priority="3" />
+      <Item value="Html" priority="1" />
+      <Item value="cid" priority="3" />
+      <Item value="customerIdentifier" priority="1" />
+      <Item value="lst2" priority="0" />
+      <Item value="SelectList`0" priority="0" />
+      <Item value="custInfoList" priority="0" />
+      <Item value="CustomerProfile`0" priority="2" />
+      <Item value="Customer`0" priority="0" />
+      <Item value="crep" priority="0" />
+      <Item value="allCust" priority="0" />
+      <Item value="Interfaces" priority="0" />
+      <Item value="HttpGetAttribute`0" priority="1" />
+      <Item value="AppDomainSetup`0" priority="1" />
+      <Item value="telephoneId" priority="0" />
+      <Item value="CustomerName" priority="0" />
+      <Item value="GetCustomerToken`0" priority="0" />
+      <Item value="customerProfiles" priority="0" />
+      <Item value="orderId" priority="2" />
+      <Item value="decimal" priority="6" />
+      <Item value="ord" priority="1" />
+      <Item value="orderLineItem" priority="0" />
+      <Item value="orderTotal" priority="2" />
+      <Item value="lineItem" priority="0" />
+      <Item value="OrderTotal" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="OrderDetailRepository`0" priority="0" />
+      <Item value="Order`0" priority="1" />
+      <Item value="no" priority="3" />
+      <Item value="oldOrder" priority="2" />
+      <Item value="orderList" priority="0" />
+      <Item value="orders" priority="0" />
+      <Item value="orderDetailRepository" priority="0" />
+      <Item value="order" priority="1" />
+      <Item value="CustomerGridViewModel`0" priority="0" />
+      <Item value="this" priority="0" />
+      <Item value="ProductId" priority="1" />
+      <Item value="productId" priority="7" />
+      <Item value="Price" priority="0" />
+      <Item value="IsOnSale" priority="0" />
+      <Item value="productPricing" priority="3" />
+      <Item value="ProductPricing`0" priority="1" />
+      <Item value="OriginalPrice" priority="0" />
+      <Item value="promotion" priority="5" />
+      <Item value="SalesEndDate" priority="0" />
+      <Item value="SalesStartDate" priority="0" />
+      <Item value="PercentDiscount" priority="0" />
+      <Item value="bool" priority="0" />
+      <Item value="ProductPricingViewModel`0" priority="0" />
+      <Item value="promotionViewModel" priority="1" />
+      <Item value="productPricingViewModel" priority="0" />
+      <Item value="prodPrice" priority="1" />
+      <Item value="productPrice" priority="2" />
+      <Item value="ProductPricingRepository`0" priority="0" />
+      <Item value="ProductPricingRepository" priority="0" />
+      <Item value="productPricingRepository" priority="0" />
+      <Item value="orderDetail" priority="6" />
+      <Item value="DateTime`0" priority="2" />
+      <Item value="sales" priority="2" />
+      <Item value="currentDate" priority="3" />
+      <Item value="salesEndDate" priority="0" />
+      <Item value="salesPrice" priority="2" />
+      <Item value="priceTopay" priority="1" />
+      <Item value="SalesPrice" priority="0" />
+      <Item value="isOnSale" priority="0" />
+      <Item value="PromotionRepository`0" priority="0" />
+      <Item value="promotionRepository" priority="0" />
+      <Item value="_discountMultplier" priority="0" />
+      <Item value="discount" priority="1" />
+      <Item value="currentPrice" priority="0" />
+      <Item value="denom" priority="0" />
+      <Item value="LineItemTotal" priority="0" />
+      <Item value="byte" priority="3" />
+      <Item value="bitmap" priority="0" />
+      <Item value="bitmapData" priority="0" />
+      <Item value="Bitmap`0" priority="0" />
+      <Item value="output" priority="0" />
+      <Item value="BitmapFromBytes`0" priority="0" />
+      <Item value="returnImage" priority="0" />
+      <Item value="newResizedImage" priority="1" />
+      <Item value="MarshalByRefObject`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.KarenEntities">
+      <Item value="Customers" priority="2" />
+      <Item value="Addresses" priority="3" />
+      <Item value="Telephones" priority="0" />
+      <Item value="ElectronicMails" priority="0" />
+      <Item value="OrderDetails" priority="0" />
+      <Item value="ProductPricings" priority="0" />
+      <Item value="Promotions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.Customer">
+      <Item value="Id" priority="3" />
+      <Item value="FirstName" priority="3" />
+      <Item value="MiddleInitial" priority="1" />
+      <Item value="LastName" priority="2" />
+      <Item value="ModifiedDate" priority="1" />
+      <Item value="MI" priority="0" />
+      <Item value="CustomerName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="FirstOrDefault`1" priority="1" />
+      <Item value="Skip`1" priority="0" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="OrderBy`2" priority="1" />
+      <Item value="Select`2" priority="0" />
+      <Item value="SingleOrDefault`1" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Repository.CustomerRepository">
+      <Item value="List`0" priority="1" />
+      <Item value="Get`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="ctx" priority="0" />
+      <Item value="Add`0" priority="3" />
+      <Item value="Skip`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.CustomerViewModel">
+      <Item value="Id" priority="2" />
+      <Item value="HasNextPage" priority="0" />
+      <Item value="CustomerName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.Address">
+      <Item value="Addr" priority="1" />
+      <Item value="State" priority="1" />
+      <Item value="Zip" priority="1" />
+      <Item value="IsPrimary" priority="3" />
+      <Item value="City" priority="0" />
+      <Item value="CustomerId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.AddressViewModel">
+      <Item value="Id" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.Telephone">
+      <Item value="PhoneNumber" priority="8" />
+      <Item value="IsPrimary" priority="2" />
+      <Item value="CustomerId" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="1" />
+      <Item value="Keys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="0" />
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="3" />
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.TelephoneViewModel">
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.HtmlHelper`1">
+      <Item value="CheckBoxFor`1" priority="4" />
+      <Item value="DropDownListFor`2" priority="6" />
+      <Item value="RenderPartial`0" priority="1" />
+      <Item value="CheckBox`0" priority="0" />
+      <Item value="EditorFor`2" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Repository.TelephoneRepository">
+      <Item value="GetCustomerInfo`0" priority="0" />
+      <Item value="GetCustomerDropDownInfo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.SelectListItem">
+      <Item value="Value" priority="0" />
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Key" priority="2" />
+      <Item value="Value" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.TelephoneEditViewModel">
+      <Item value="CustomerIdentifier" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.Models.PaginatedList`1">
+      <Item value="PageSize" priority="1" />
+      <Item value="PageIndex" priority="0" />
+      <Item value="TotalCount" priority="0" />
+      <Item value="TotalPages" priority="0" />
+      <Item value="Count" priority="0" />
+      <Item value="HasNextPage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="HasNextPage" priority="0" />
+      <Item value="PageIndex" priority="0" />
+      <Item value="ToList`1" priority="1" />
+      <Item value="Skip`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.TelephoneCreateViewModel">
+      <Item value="CustomerIdentifier" priority="24" />
+      <Item value="Id" priority="1" />
+      <Item value="Items" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Repository.CustomerIdentifier">
+      <Item value="CustId" priority="5" />
+      <Item value="CustName" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.PhonePartialViewModel">
+      <Item value="CustomerIdentifier" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.SelectList">
+      <Item value="DataValueField" priority="5" />
+      <Item value="DataTextField" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.TevephoneViewer">
+      <Item value="TelephoneLocation" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.TelephoneViewer">
+      <Item value="TelephoneLocation" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Implementations.TelephoneRepository">
+      <Item value="GetCustomerToken`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Domain.CustomerToken">
+      <Item value="TokenName" priority="0" />
+      <Item value="TokenId" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.CustomerDropdownViewModel">
+      <Item value="SelectedCustomer" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.ViewDataDictionary`1">
+      <Item value="Model" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.OrderDetail">
+      <Item value="OrderId" priority="0" />
+      <Item value="Quantity" priority="1" />
+      <Item value="Amount" priority="0" />
+      <Item value="ProductId" priority="0" />
+      <Item value="UnitPrice" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.Order">
+      <Item value="Id" priority="2" />
+      <Item value="ModifiedDate" priority="1" />
+      <Item value="Customer" priority="1" />
+      <Item value="Amount" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Implementations.OrderDetailRepository">
+      <Item value="GetOrderTotal`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Implementations.CustomerRepository">
+      <Item value="List`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.CustomerGridViewModel">
+      <Item value="Customers" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.ProductPricing">
+      <Item value="Id" priority="2" />
+      <Item value="Price" priority="4" />
+      <Item value="IsOnSale" priority="4" />
+      <Item value="ProductId" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.Promotion">
+      <Item value="OriginalPrice" priority="2" />
+      <Item value="SalesStartDate" priority="4" />
+      <Item value="SalesEndDate" priority="3" />
+      <Item value="PercentDiscount" priority="3" />
+      <Item value="ProductId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.EntityFrameWork.Product">
+      <Item value="ProductPricings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.PromotionViewModel">
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.ProductPricingViewModel">
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.Objects.ObjectSet`1">
+      <Item value="Where`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Implementations.ProductPricingRepository">
+      <Item value="GetPricing`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="Date" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.Domain.Implementations.PromotionRepository">
+      <Item value="GetPromotionPricing`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.ProductViewModel">
+      <Item value="Image" priority="0" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Artist.UI.ViewModels.OrderDetailViewModel">
+      <Item value="LineItemTotal" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Imaging.ImageFormat">
+      <Item value="Jpeg" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

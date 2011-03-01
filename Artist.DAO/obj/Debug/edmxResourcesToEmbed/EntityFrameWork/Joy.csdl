@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KarenModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="KarenEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Addresses" EntityType="KarenModel.Address" />
+    <EntitySet Name="Customers" EntityType="KarenModel.Customer" />
+    <EntitySet Name="ElectronicMails" EntityType="KarenModel.ElectronicMail" />
+    <EntitySet Name="Orders" EntityType="KarenModel.Order" />
+    <EntitySet Name="OrderDetails" EntityType="KarenModel.OrderDetail" />
+    <EntitySet Name="Products" EntityType="KarenModel.Product" />
+    <EntitySet Name="ProductPricings" EntityType="KarenModel.ProductPricing" />
+    <EntitySet Name="Promotions" EntityType="KarenModel.Promotion" />
+    <EntitySet Name="Telephones" EntityType="KarenModel.Telephone" />
+    <AssociationSet Name="FK_Address_CustomerId" Association="KarenModel.FK_Address_CustomerId">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Address" EntitySet="Addresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ElectronicMail_CustomerId" Association="KarenModel.FK_ElectronicMail_CustomerId">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="ElectronicMail" EntitySet="ElectronicMails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_CustomerId" Association="KarenModel.FK_Order_CustomerId">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Order" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telephone_CustomerId" Association="KarenModel.FK_Telephone_CustomerId">
+      <End Role="Customer" EntitySet="Customers" />
+      <End Role="Telephone" EntitySet="Telephones" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_OrderId" Association="KarenModel.FK_OrderDetail_OrderId">
+      <End Role="Order" EntitySet="Orders" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_ProductId" Association="KarenModel.FK_OrderDetail_ProductId">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="OrderDetail" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductPricing_ProductId" Association="KarenModel.FK_ProductPricing_ProductId">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="ProductPricing" EntitySet="ProductPricings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Promotion_ProductId" Association="KarenModel.FK_Promotion_ProductId">
+      <End Role="Product" EntitySet="Products" />
+      <End Role="Promotion" EntitySet="Promotions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Addr" Type="String" Nullable="false" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="false" />
+    <Property Name="Zip" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsPrimary" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="KarenModel.FK_Address_CustomerId" FromRole="Address" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Addresses" Relationship="KarenModel.FK_Address_CustomerId" FromRole="Customer" ToRole="Address" />
+    <NavigationProperty Name="ElectronicMails" Relationship="KarenModel.FK_ElectronicMail_CustomerId" FromRole="Customer" ToRole="ElectronicMail" />
+    <NavigationProperty Name="Orders" Relationship="KarenModel.FK_Order_CustomerId" FromRole="Customer" ToRole="Order" />
+    <NavigationProperty Name="Telephones" Relationship="KarenModel.FK_Telephone_CustomerId" FromRole="Customer" ToRole="Telephone" />
+    <Property Type="String" Name="CustomerName" Nullable="false" MaxLength="201" FixedLength="false" Unicode="false" annotation:StoreGeneratedPattern="Computed" />
+    <Property Type="String" Name="MI" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="ElectronicMail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsPrimary" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="KarenModel.FK_ElectronicMail_CustomerId" FromRole="ElectronicMail" ToRole="Customer" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="KarenModel.FK_Order_CustomerId" FromRole="Order" ToRole="Customer" />
+    <NavigationProperty Name="OrderDetails" Relationship="KarenModel.FK_OrderDetail_OrderId" FromRole="Order" ToRole="OrderDetail" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="KarenModel.FK_OrderDetail_OrderId" FromRole="OrderDetail" ToRole="Order" />
+    <NavigationProperty Name="Product" Relationship="KarenModel.FK_OrderDetail_ProductId" FromRole="OrderDetail" ToRole="Product" />
+    <Property Type="Decimal" Name="UnitPrice" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="LineItemTotal" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Image" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="MimeType" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Length" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Width" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Material" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="OrderDetails" Relationship="KarenModel.FK_OrderDetail_ProductId" FromRole="Product" ToRole="OrderDetail" />
+    <NavigationProperty Name="ProductPricings" Relationship="KarenModel.FK_ProductPricing_ProductId" FromRole="Product" ToRole="ProductPricing" />
+    <NavigationProperty Name="Promotions" Relationship="KarenModel.FK_Promotion_ProductId" FromRole="Product" ToRole="Promotion" />
+  </EntityType>
+  <EntityType Name="ProductPricing">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="IsOnSale" Type="Boolean" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="KarenModel.FK_ProductPricing_ProductId" FromRole="ProductPricing" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Promotion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="SalesStartDate" Type="DateTime" />
+    <Property Name="SalesEndDate" Type="DateTime" />
+    <Property Name="PercentDiscount" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="KarenModel.FK_Promotion_ProductId" FromRole="Promotion" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Telephone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="Int32" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="IsPrimary" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Customer" Relationship="KarenModel.FK_Telephone_CustomerId" FromRole="Telephone" ToRole="Customer" />
+  </EntityType>
+  <Association Name="FK_Address_CustomerId">
+    <End Role="Customer" Type="KarenModel.Customer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Address" Type="KarenModel.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ElectronicMail_CustomerId">
+    <End Role="Customer" Type="KarenModel.Customer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ElectronicMail" Type="KarenModel.ElectronicMail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ElectronicMail">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_CustomerId">
+    <End Role="Customer" Type="KarenModel.Customer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Order" Type="KarenModel.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Telephone_CustomerId">
+    <End Role="Customer" Type="KarenModel.Customer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Telephone" Type="KarenModel.Telephone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Telephone">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_OrderId">
+    <End Role="Order" Type="KarenModel.Order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderDetail" Type="KarenModel.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_ProductId">
+    <End Role="Product" Type="KarenModel.Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="OrderDetail" Type="KarenModel.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductPricing_ProductId">
+    <End Role="Product" Type="KarenModel.Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ProductPricing" Type="KarenModel.ProductPricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductPricing">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Promotion_ProductId">
+    <End Role="Product" Type="KarenModel.Product" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Promotion" Type="KarenModel.Promotion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Promotion">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

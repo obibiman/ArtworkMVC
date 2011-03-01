@@ -1,0 +1,105 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Properties/f:AssemblyInfo.cs" caret="0" fromTop="0" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Customer/f:Paged.aspx" caret="0" fromTop="0" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Business/d:Interfaces/f:ICustomerService.cs" caret="285" fromTop="9" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Business/d:ValueAdded/f:AddressService.cs" caret="0" fromTop="0" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Business/d:Interfaces/f:IElectronicMailService.cs" caret="406" fromTop="13" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/f:Global.asax.cs" caret="1569" fromTop="26" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Implementations/f:CustomerRepository.cs" caret="995" fromTop="26" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:Business/d:ValueAdded/f:CustomerService.cs" caret="632" fromTop="20" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:StructureMapUtil/f:StructureMapController.cs" caret="341" fromTop="11" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="721" fromTop="19" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:RegisterProject.cs" caret="122" fromTop="6" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:ProjectRegistry.cs" caret="559" fromTop="10" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Views/d:Customer/f:Paged.aspx" caret="0" fromTop="0" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:ProjectRegistry.cs" caret="2353" fromTop="30" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:ProjectRegistry.cs" caret="1617" fromTop="29" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:ProjectRegistry.cs" caret="329" fromTop="6" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:RegisterProject.cs" caret="192" fromTop="8" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/f:Global.asax.cs" caret="1725" fromTop="23" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="510" fromTop="16" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="680" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="2130" fromTop="28" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="2607" fromTop="16" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="3609" fromTop="18" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="4456" fromTop="16" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="5189" fromTop="21" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="6045" fromTop="19" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="6864" fromTop="16" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="152" fromTop="5" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:Controllers/f:CustomerController.cs" caret="384" fromTop="12" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:StructureMapUtil/f:StructureMapController.cs" caret="265" fromTop="8" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:StructureMapUtil/f:StructureMapController.cs" caret="535" fromTop="13" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/d:StructureMapUtil/f:StructureMapController.cs" caret="84" fromTop="3" />
+      <File id="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4/f:Global.asax.cs" caret="1585" fromTop="19" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:ProjectRegistry.cs" caret="2336" fromTop="33" />
+      <File id="7C44A671-382A-4525-B80A-258D0BA3B22B/d:IoCRegistry/f:ProjectRegistry.cs" caret="653" fromTop="11" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files (x86)\NUnit 2.5.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="IAddressRepository`0" priority="0" />
+      <Item value="AddressRepository`0" priority="0" />
+      <Item value="IAddressService`0" priority="0" />
+      <Item value="AddressService`0" priority="0" />
+      <Item value="ICustomerRepository`0" priority="0" />
+      <Item value="CustomerRepository`0" priority="0" />
+      <Item value="CustomerService`0" priority="0" />
+      <Item value="ICustomerService`0" priority="0" />
+      <Item value="IElectronicMailRepository`0" priority="0" />
+      <Item value="ElectronicMailRepository`0" priority="0" />
+      <Item value="IElectronicMailService`0" priority="0" />
+      <Item value="ElectronicMailService`0" priority="0" />
+      <Item value="IOrderDetailRepository`0" priority="0" />
+      <Item value="OrderDetailRepository`0" priority="0" />
+      <Item value="IOrderDetailService`0" priority="0" />
+      <Item value="OrderDetailService`0" priority="0" />
+      <Item value="IOrderRepository`0" priority="0" />
+      <Item value="OrderRepository`0" priority="0" />
+      <Item value="IOrderService`0" priority="0" />
+      <Item value="OrderService`0" priority="0" />
+      <Item value="IProductPricingRepository`0" priority="0" />
+      <Item value="ProductPricingRepository`0" priority="0" />
+      <Item value="IProductPricingService`0" priority="0" />
+      <Item value="ProductPricingService`0" priority="0" />
+      <Item value="IPromotionRepository`0" priority="0" />
+      <Item value="PromotionRepository`0" priority="0" />
+      <Item value="PromotionService`0" priority="0" />
+      <Item value="IPromotionService`0" priority="0" />
+      <Item value="ITelephoneRepository`0" priority="0" />
+      <Item value="TelephoneRepository`0" priority="1" />
+      <Item value="ITelephoneService`0" priority="0" />
+      <Item value="TelephoneService`0" priority="1" />
+      <Item value="ForConcreteType`1" priority="0" />
+      <Item value="StructureMapUtil" priority="0" />
+      <Item value="StructureMapController`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Registry+BuildWithExpression`1">
+      <Item value="Configure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StructureMap.Configuration.DSL.Expressions.CreatePluginFamilyExpression`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

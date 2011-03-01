@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAD825CC-8F21-4250-AEAB-ED7DF37C02C4}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Artist.UI</RootNamespace>
+    <AssemblyName>Artist.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="StructureMap, Version=2.6.0.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <HintPath>..\Dependencies\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AddressController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\ElectronicMailController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\OrderDetailController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProductPricingController.cs" />
+    <Compile Include="Controllers\PromotionController.cs" />
+    <Compile Include="Controllers\TelephoneController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HelperClasses\RoutevalueDictionaryExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StructureMapUtil\StructureMapController.cs" />
+    <Compile Include="ViewModels\AddressViewModel.cs" />
+    <Compile Include="ViewModels\CustomerGridViewModel.cs" />
+    <Compile Include="ViewModels\CustomerViewModel.cs" />
+    <Compile Include="ViewModels\CustomerDropdownViewModel.cs" />
+    <Compile Include="ViewModels\ElectronicMailViewModel.cs" />
+    <Compile Include="ViewModels\OrderDetailViewModel.cs" />
+    <Compile Include="ViewModels\OrderViewModel.cs" />
+    <Compile Include="ViewModels\ProductPricingViewModel.cs" />
+    <Compile Include="ViewModels\ProductViewModel.cs" />
+    <Compile Include="ViewModels\PromotionViewModel.cs" />
+    <Compile Include="ViewModels\TelephoneViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\jquery-ui-1.8.9.custom.css" />
+    <Content Include="Content\jquery.ui.all.css" />
+    <Content Include="Content\jquery.ui.datepicker.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-ui-1.8.9.custom.js" />
+    <Content Include="Scripts\jquery.ui.datepicker.js" />
+    <Content Include="Views\Address\Create.aspx" />
+    <Content Include="Views\Address\Delete.aspx" />
+    <Content Include="Views\Address\Details.aspx" />
+    <Content Include="Views\Address\Edit.aspx" />
+    <Content Include="Views\Address\Index.aspx" />
+    <Content Include="Views\Address\No data found.aspx" />
+    <Content Include="Views\Customer\Create.aspx" />
+    <Content Include="Views\Customer\Delete.aspx" />
+    <Content Include="Views\Customer\Details.aspx" />
+    <Content Include="Views\Customer\Edit.aspx" />
+    <Content Include="Views\Customer\Index.aspx" />
+    <Content Include="Views\Customer\No data found.aspx" />
+    <Content Include="Views\Customer\Paged.aspx" />
+    <Content Include="Views\ElectronicMail\Create.aspx" />
+    <Content Include="Views\ElectronicMail\Delete.aspx" />
+    <Content Include="Views\ElectronicMail\Details.aspx" />
+    <Content Include="Views\ElectronicMail\Edit.aspx" />
+    <Content Include="Views\ElectronicMail\Index.aspx" />
+    <Content Include="Views\ElectronicMail\No data found.aspx" />
+    <Content Include="Views\OrderDetail\Create.aspx" />
+    <Content Include="Views\OrderDetail\Delete.aspx" />
+    <Content Include="Views\OrderDetail\Details.aspx" />
+    <Content Include="Views\OrderDetail\Edit.aspx" />
+    <Content Include="Views\OrderDetail\Index.aspx" />
+    <Content Include="Views\OrderDetail\No data found.aspx" />
+    <Content Include="Views\Order\Create.aspx" />
+    <Content Include="Views\Order\Delete.aspx" />
+    <Content Include="Views\Order\Details.aspx" />
+    <Content Include="Views\Order\Edit.aspx" />
+    <Content Include="Views\Order\Index.aspx" />
+    <Content Include="Views\Order\No data found.aspx" />
+    <Content Include="Views\ProductPricing\Create.aspx" />
+    <Content Include="Views\ProductPricing\Delete.aspx" />
+    <Content Include="Views\ProductPricing\Details.aspx" />
+    <Content Include="Views\ProductPricing\Edit.aspx" />
+    <Content Include="Views\ProductPricing\Index.aspx" />
+    <Content Include="Views\ProductPricing\No data found.aspx" />
+    <Content Include="Views\Product\Create.aspx" />
+    <Content Include="Views\Product\Details.aspx" />
+    <Content Include="Views\Product\Index.aspx" />
+    <Content Include="Views\Product\No data found.aspx" />
+    <Content Include="Views\Shared\EditorTemplates\DateTime.ascx" />
+    <Content Include="Views\Shared\ProductSummary.ascx" />
+    <Content Include="Views\Promotion\Create.aspx" />
+    <Content Include="Views\Promotion\Delete.aspx" />
+    <Content Include="Views\Promotion\Details.aspx" />
+    <Content Include="Views\Promotion\Edit.aspx" />
+    <Content Include="Views\Promotion\Index.aspx" />
+    <Content Include="Views\Promotion\No data found.aspx" />
+    <Content Include="Views\Shared\Pager.ascx" />
+    <Content Include="Views\Shared\PagerLink.ascx" />
+    <Content Include="Views\Telephone\Create.aspx" />
+    <Content Include="Views\Telephone\Details.aspx" />
+    <Content Include="Views\Telephone\Edit.aspx" />
+    <Content Include="Views\Telephone\Index.aspx" />
+    <Content Include="Views\Telephone\No data found.aspx" />
+    <Content Include="Views\Telephone\PhoneDropdown.aspx" />
+    <Content Include="Views\Telephone\DropdownUC.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Artist.DAO\Artist.DAO.csproj">
+      <Project>{7C44A671-382A-4525-B80A-258D0BA3B22B}</Project>
+      <Name>Artist.DAO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54285</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

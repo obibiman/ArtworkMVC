@@ -1,0 +1,12 @@
+C:\DotNetApps\Steelers\LaFourche\Artist.Domain\bin\Debug\Artist.Domain.dll.config
+C:\DotNetApps\Steelers\LaFourche\Artist.Domain\bin\Debug\Artist.Domain.dll
+C:\DotNetApps\Steelers\LaFourche\Artist.Domain\bin\Debug\Artist.Domain.pdb
+C:\DotNetApps\Steelers\LaFourche\Artist.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\DotNetApps\Steelers\LaFourche\Artist.Domain\obj\Debug\Artist.Domain.dll
+C:\DotNetApps\Steelers\LaFourche\Artist.Domain\obj\Debug\Artist.Domain.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\bin\Debug\Artist.Domain.dll.config
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\bin\Debug\Artist.Domain.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\bin\Debug\Artist.Domain.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\obj\Debug\Artist.Domain.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\obj\Debug\Artist.Domain.pdb

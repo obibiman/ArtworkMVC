@@ -1,0 +1,14 @@
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\bin\Debug\Artist.DAO.dll.config
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\bin\Debug\Artist.DAO.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\bin\Debug\Artist.DAO.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\obj\Debug\Artist.DAO.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.Domain\obj\Debug\Artist.DAO.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\bin\Debug\Artist.DAO.dll.config
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\bin\Debug\Artist.DAO.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\bin\Debug\Artist.DAO.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\bin\Debug\StructureMap.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\bin\Debug\StructureMap.xml
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\obj\Debug\Artist.DAO.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.DAO\obj\Debug\Artist.DAO.pdb

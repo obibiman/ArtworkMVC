@@ -1,0 +1,16 @@
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\bin\Artist.UI.dll
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\bin\Artist.UI.pdb
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\bin\Artist.Domain.dll
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\bin\Artist.Domain.pdb
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\obj\Debug\ResolveAssemblyReference.cache
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\obj\Debug\Artist.UI.dll
+C:\DotNetApps\Steelers\LaFourche\Artist.UI\obj\Debug\Artist.UI.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\bin\Artist.UI.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\bin\Artist.UI.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\bin\Artist.DAO.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\bin\StructureMap.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\bin\Artist.DAO.pdb
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\bin\StructureMap.xml
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\obj\Debug\ResolveAssemblyReference.cache
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\obj\Debug\Artist.UI.dll
+C:\DotNetApps\Ravens\LaFourche\Artist.UI\obj\Debug\Artist.UI.pdb

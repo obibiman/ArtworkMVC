@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KarenModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="KarenModelStoreContainer">
+    <EntitySet Name="Address" EntityType="KarenModel.Store.Address" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="Customer" EntityType="KarenModel.Store.Customer" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="ElectronicMail" EntityType="KarenModel.Store.ElectronicMail" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="Order" EntityType="KarenModel.Store.Order" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="OrderDetail" EntityType="KarenModel.Store.OrderDetail" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="Product" EntityType="KarenModel.Store.Product" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="ProductPricing" EntityType="KarenModel.Store.ProductPricing" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="Promotion" EntityType="KarenModel.Store.Promotion" store:Type="Tables" Schema="rsm" />
+    <EntitySet Name="Telephone" EntityType="KarenModel.Store.Telephone" store:Type="Tables" Schema="rsm" />
+    <AssociationSet Name="FK_Address_CustomerId" Association="KarenModel.Store.FK_Address_CustomerId">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Address" EntitySet="Address" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ElectronicMail_CustomerId" Association="KarenModel.Store.FK_ElectronicMail_CustomerId">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="ElectronicMail" EntitySet="ElectronicMail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_CustomerId" Association="KarenModel.Store.FK_Order_CustomerId">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_OrderId" Association="KarenModel.Store.FK_OrderDetail_OrderId">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_ProductId" Association="KarenModel.Store.FK_OrderDetail_ProductId">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ProductPricing_ProductId" Association="KarenModel.Store.FK_ProductPricing_ProductId">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="ProductPricing" EntitySet="ProductPricing" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Promotion_ProductId" Association="KarenModel.Store.FK_Promotion_ProductId">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Promotion" EntitySet="Promotion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Telephone_CustomerId" Association="KarenModel.Store.FK_Telephone_CustomerId">
+      <End Role="Customer" EntitySet="Customer" />
+      <End Role="Telephone" EntitySet="Telephone" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Address">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Addr" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="City" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="State" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="Zip" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsPrimary" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="MI" Type="varchar" MaxLength="1" />
+    <Property Name="LastName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="CustomerName" Type="varchar" Nullable="false" MaxLength="201" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ElectronicMail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsPrimary" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="decimal" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="UnitPrice" Type="money" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="LineItemTotal" Type="money" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Image" Type="varbinary(max)" Nullable="false" />
+    <Property Name="MimeType" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="200" />
+    <Property Name="Length" Type="decimal" Nullable="false" />
+    <Property Name="Width" Type="decimal" Nullable="false" />
+    <Property Name="Material" Type="varchar" MaxLength="15" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductPricing">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="Price" Type="money" Nullable="false" />
+    <Property Name="IsOnSale" Type="bit" Nullable="false" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Promotion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="SalesStartDate" Type="datetime" />
+    <Property Name="SalesEndDate" Type="datetime" />
+    <Property Name="PercentDiscount" Type="decimal" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Telephone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="PhoneNumber" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="ModifiedDate" Type="datetime" Nullable="false" />
+    <Property Name="IsPrimary" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Address_CustomerId">
+    <End Role="Customer" Type="KarenModel.Store.Customer" Multiplicity="1" />
+    <End Role="Address" Type="KarenModel.Store.Address" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Address">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ElectronicMail_CustomerId">
+    <End Role="Customer" Type="KarenModel.Store.Customer" Multiplicity="1" />
+    <End Role="ElectronicMail" Type="KarenModel.Store.ElectronicMail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ElectronicMail">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_CustomerId">
+    <End Role="Customer" Type="KarenModel.Store.Customer" Multiplicity="1" />
+    <End Role="Order" Type="KarenModel.Store.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_OrderId">
+    <End Role="Order" Type="KarenModel.Store.Order" Multiplicity="1" />
+    <End Role="OrderDetail" Type="KarenModel.Store.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_ProductId">
+    <End Role="Product" Type="KarenModel.Store.Product" Multiplicity="1" />
+    <End Role="OrderDetail" Type="KarenModel.Store.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ProductPricing_ProductId">
+    <End Role="Product" Type="KarenModel.Store.Product" Multiplicity="1" />
+    <End Role="ProductPricing" Type="KarenModel.Store.ProductPricing" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ProductPricing">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Promotion_ProductId">
+    <End Role="Product" Type="KarenModel.Store.Product" Multiplicity="1" />
+    <End Role="Promotion" Type="KarenModel.Store.Promotion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Promotion">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Telephone_CustomerId">
+    <End Role="Customer" Type="KarenModel.Store.Customer" Multiplicity="1" />
+    <End Role="Telephone" Type="KarenModel.Store.Telephone" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Customer">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Telephone">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

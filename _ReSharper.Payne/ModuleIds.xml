@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="EAD825CC-8F21-4250-AEAB-ED7DF37C02C4" ModuleId="Artist.UI" />
+  <Module PersistentId="7C44A671-382A-4525-B80A-258D0BA3B22B" ModuleId="Artist.DAO" />
+</Modules>
